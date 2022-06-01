@@ -1,5 +1,5 @@
 from email.policy import default
-from tkinter import CASCADE
+# from tkinter import CASCADE
 from django.db import models
 
 class Course(models.Model) :
@@ -19,7 +19,7 @@ class Course(models.Model) :
 
 class CourseProperty(models.Model):
   description = models.CharField(max_length= 100 , null=False)
-  course = models.ForeignKey(Course , null = False , on_delete=models.CASCADE)
+  course = models.ForeignKey(Course , null = False)
 
   class Meta : 
         abstract = True

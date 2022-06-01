@@ -1,5 +1,5 @@
 from email.policy import default
-from _tkinter import CASCADE
+from tkinter import CASCADE
 from django.db import models
 
 class Course(models.Model) :
